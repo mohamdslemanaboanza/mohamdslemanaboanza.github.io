@@ -121,7 +121,8 @@ window.PROJECTS = [
     tag: "SilverFern · Client: Modon Holding",
     period: "Sep 2026 – Present",
     role: "Android Developer at SilverFern (Dubai), working on the Modon Holding account",
-    image: null,
+    image: "images/modon.jpg",
+    gallery: ["images/gallery/modon-home.jpg", "images/gallery/modon-amenities.jpg", "images/gallery/modon-bbq.jpg", "images/gallery/modon-poll.jpg", "images/gallery/modon-help.jpg"],
     links: [],
     stack: ["Kotlin", "Jetpack Compose", "MVVM", "Hilt", "Retrofit", "kotlinx.serialization", "Auth0", "Paparazzi", "mockk"],
     overview: [
