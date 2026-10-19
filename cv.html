@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mohammed Abu Anzeh — CV</title>
+<style>
+@page{size:A4;margin:10mm 12mm}
+*{box-sizing:border-box}
+body{font-family:Carlito,Calibri,"Helvetica Neue",Arial,sans-serif;font-size:9.2pt;line-height:1.26;color:#111;margin:0}
+h1{font-size:20pt;margin:0;letter-spacing:.02em}
+.sub{font-size:12pt;font-weight:600;color:#1f3a5f;margin:2px 0 4px}
+.contact{font-size:9.5pt;color:#333}
+.contact a{color:#1f3a5f;text-decoration:none}
+h2{font-size:11pt;text-transform:uppercase;letter-spacing:.08em;color:#1f3a5f;border-bottom:1.2px solid #1f3a5f;padding-bottom:2px;margin:8px 0 3px}
+p{margin:0 0 4px}
+ul{margin:2px 0 4px;padding-left:16px}
+li{margin:0 0 1px}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.role{font-weight:700;font-size:10.8pt}
+.org{color:#333}
+.date{white-space:nowrap;color:#333;font-size:9.5pt}
+.proj{margin-top:4px}
+.proj .name{font-weight:700}
+.stack{font-style:italic;color:#444;font-size:9.5pt}
+.skills p{margin:0 0 2px}
+.skills b{color:#1f3a5f}
+.avoid{break-inside:auto}.row,.name,h2{break-after:avoid}
+</style>
+</head>
+<body>
+
+<h1>MOHAMMED ABU ANZEH</h1>
+<div class="sub">Android Software Engineer</div>
+<div class="contact">Amman, Jordan &nbsp;|&nbsp; +962 78 904 5025 &nbsp;|&nbsp; <a href="mailto:mabnoaza@gmail.com">mabnoaza@gmail.com</a><br>
+<a href="https://mohamdslemanaboanza.github.io">mohamdslemanaboanza.github.io</a> &nbsp;|&nbsp; <a href="https://linkedin.com/in/mohammed-abuanzeh-920815148">linkedin.com/in/mohammed-abuanzeh-920815148</a> &nbsp;|&nbsp; <a href="https://github.com/mohamdslemanaboanza">github.com/mohamdslemanaboanza</a> &nbsp;|&nbsp; <a href="https://behance.net/eng-mohaboanza">behance.net/eng-mohaboanza</a></div>
+
+<h2>Professional Summary</h2>
+<p>Android Software Engineer with 5+ years of experience designing and shipping production mobile applications in Kotlin and Jetpack Compose, currently building the Modon SuperApp for Modon Holding in Abu Dhabi. Specialised in Kotlin Multiplatform (KMP) and Compose Multiplatform (CMP), multi-module Clean Architecture with MVI and MVVM, and payment-critical flows including HyperPay, 3D Secure, and OTP-verified checkout. Experienced in REST API integration, Auth0, Firebase, Room/SQLite persistence, full Arabic/English RTL localisation, snapshot testing, and AI-powered features built on Claude AI and LLM APIs. Founder of Wasta (16,000+ organic users), Barq, MenuJo and Trip500. Proven record of code review, mentoring junior developers, and delivering in Agile teams.</p>
+
+<h2>Technical Skills</h2>
+<div class="skills">
+<p><b>Programming Languages:</b> Kotlin, Java</p>
+<p><b>Android:</b> Android SDK, Jetpack Compose, Compose Multiplatform (CMP), Kotlin Multiplatform (KMP), Material Design 3, Coroutines, Flow, Room, SQLite, Navigation Component, Paging 3, WorkManager, LiveData, Data Binding</p>
+<p><b>Architecture &amp; DI:</b> Clean Architecture, MVI (reducers, middlewares, effects), MVVM, multi-module design with api/impl separation, Dagger, Anvil, Hilt</p>
+<p><b>Backend &amp; APIs:</b> REST API, Retrofit, Moshi, kotlinx.serialization, OkHttp, JSON, Auth0, Firebase (Authentication, Realtime Database, Cloud Functions, FCM, Crashlytics), Postman, Swagger</p>
+<p><b>Payments &amp; Security:</b> HyperPay / OPPWA SDK, 3D Secure, mada, Visa/Mastercard, MisPay, saved cards, in-app wallet, OTP verification, biometric authentication, AES-encrypted payloads, token refresh</p>
+<p><b>Testing &amp; Quality:</b> Paparazzi snapshot tests, mockk, JUnit, pixel-level Figma parity, code review</p>
+<p><b>AI Integration:</b> Claude AI, LLM APIs, recommendation engines, user behaviour analytics, machine learning APIs</p>
+<p><b>Other:</b> Embedded Unity (IL2CPP) integration, Google Maps, QR code generation, Arabic/English localisation with RTL support, dark mode</p>
+<p><b>Tools &amp; Practices:</b> Android Studio, Git, GitHub, Bitbucket, Jira, Figma, Agile, Scrum, performance optimisation</p>
+<p><b>Languages:</b> Arabic (Native), English (Professional)</p>
+</div>
+
+<h2>Professional Experience</h2>
+
+<div class="avoid">
+<div class="row"><span><span class="role">Android Developer</span> &nbsp;|&nbsp; <span class="org">Modon Holding &nbsp;|&nbsp; Abu Dhabi, UAE</span></span><span class="date">Sep 2026 – Present</span></div>
+<p class="stack">Modon SuperApp: the residents' and owners' app for Modon communities (property portfolio, payments, handover, community services). Kotlin, Jetpack Compose, MVVM, Hilt, Retrofit, kotlinx.serialization, Auth0, Paparazzi, mockk</p>
+<ul>
+<li>Built and shipped community features in Kotlin / Jetpack Compose: community home, amenities booking, events, polls, notices, notifications, service requests, e-permits, NOCs, short stay, storage, access cards, violations and large-item requests.</li>
+<li>Delivered the guest registration flow end to end: email verification, Auth0 sign-in, multi-step form with document types, integration with the Farvision and OCI API Gateway back-ends, and a post-verification decision flow (new / pending / already registered).</li>
+<li>Owned the handover and move-in/move-out flows, including temporary back-end workarounds agreed with the backend team and tracked for removal.</li>
+<li>Drove pixel-level Figma parity across 20+ screens (spacing, typography, colours, icons, RTL/Arabic), raising measured design match from ~30% to ~70% on spacing and alignment.</li>
+<li>Maintained a Paparazzi snapshot-test suite (1,400+ tests) with mockk unit tests; reviewed teammates' pull requests and coordinated API contracts with the backend and iOS developers.</li>
+</ul>
+</div>
+
+<div class="avoid">
+<div class="row"><span><span class="role">Android Software Engineer</span> &nbsp;|&nbsp; <span class="org">Technzone &nbsp;|&nbsp; Amman, Jordan</span></span><span class="date">Jan 2022 – Aug 2026</span></div>
+<ul>
+<li>Delivered production B2B and B2C Android applications for the Jordanian and Saudi markets using Kotlin, Jetpack Compose, and Clean Architecture.</li>
+<li>Conducted code reviews, mentored junior developers, and led Compose-based UI migration across the team's applications.</li>
+<li>Integrated Claude AI and automation tools to build intelligent workflows and smart filtering features.</li>
+<li>Improved app performance and user retention by optimising caching, navigation flows, and local persistence with Room and SQLite.</li>
+</ul>
+</div>
+
+<div class="proj avoid">
+<div class="name">Ammni — Insurance Marketplace App (Android)</div>
+<div class="stack">Kotlin, Jetpack Compose, Material 3, MVI, Dagger/Anvil, Retrofit, Moshi, HyperPay</div>
+<p>Insurance platform for the Saudi market covering motor, travel, and medical malpractice insurance, from quote comparison through policy purchase and payment.</p>
+<ul>
+<li>Built the end-to-end motor insurance purchase flow (vehicle details → live offers from multiple insurers → comparison → checkout and payment) as a four-step Jetpack Compose wizard.</li>
+<li>Contributed to architecting a multi-module codebase of 30+ Gradle modules with api/impl separation, using MVI (reducers, middlewares, effects) and Dagger/Anvil dependency injection.</li>
+<li>Integrated HyperPay payment methods (mada, Visa/Mastercard, MisPay) with server-driven payment-method availability, OTP-verified checkout, and payment result tracking.</li>
+<li>Implemented live offer aggregation with parallel per-company quote fetching, shimmer loading states, price sorting and filtering, deductible selection, additional coverages, and side-by-side comparison.</li>
+<li>Developed secure networking with AES-encrypted API payloads and token refresh, plus identity features including OTP login, biometric authentication, IBAN verification for payouts, and vehicle ownership transfer.</li>
+<li>Delivered a reusable Compose component library (searchable dropdowns, OTP views, countdown timers, payment grids) and full Arabic/English localisation with RTL and runtime language switching.</li>
+</ul>
+</div>
+
+<div class="proj avoid">
+<div class="name">Parkaway — Smart Parking Booking App (Android)</div>
+<div class="stack">Kotlin, MVVM, Hilt, Coroutines/Flow, LiveData, Retrofit, Moshi, Room, Navigation, Paging 3, WorkManager, Unity (IL2CPP), Firebase, HyperPay — multiple Play Store releases</div>
+<p>Production app for finding, booking, and paying for parking spots, featuring an embedded Unity 3D engine for interactive parking-lot visualisation, in-app wallet, subscriptions, and car-wash booking.</p>
+<ul>
+<li>Integrated an embedded Unity 3D (IL2CPP) module into the native app for real-time 3D visualisation of parking lots and spot selection.</li>
+<li>Designed a dynamic over-the-air content update system for Unity assets: versioned releases fetched from the GitHub Releases API, streamed downloads with live progress via Kotlin Flow, extraction and validation, and fallback to the previous version on failure — enabling 3D content updates without a new app release and cutting install size.</li>
+<li>Implemented a hybrid WebView-to-native bridge for the map flow, parsing the selected parking-lot ID from URL parameters and returning it to the native booking flow via the Activity Result API.</li>
+<li>Integrated online payments with the HyperPay (OPPWA) mobile SDK including 3D Secure, saved cards, in-app wallet, and subscription bundles.</li>
+<li>Added Firebase Cloud Messaging push notifications, Crashlytics monitoring, Google Maps integration, QR-code booking passes, dark mode, and full Arabic/English RTL localisation.</li>
+</ul>
+</div>
+
+<div class="avoid">
+<div class="row"><span><span class="role">Android Software Engineer</span> &nbsp;|&nbsp; <span class="org">Wajeez &nbsp;|&nbsp; Amman, Jordan</span></span><span class="date">May 2021 – Dec 2021</span></div>
+<ul>
+<li>Revamped the company's main mobile application, improving UI consistency and performance.</li>
+<li>Migrated a legacy Java codebase to Kotlin, reducing the crash rate by 20%.</li>
+<li>Collaborated with cross-functional teams following Agile and Scrum methodologies.</li>
+</ul>
+</div>
+
+<h2>Personal Projects</h2>
+
+<div class="proj avoid">
+<div class="name">Wasta — Freelance and Connection Platform &nbsp;<span class="stack">gowasta.com</span></div>
+<div class="stack">Kotlin Multiplatform (KMP), Compose Multiplatform (CMP), MVI, Firebase</div>
+<ul>
+<li>Built a cross-platform application targeting Android and iOS from a single Kotlin codebase.</li>
+<li>Implemented MVI architecture with a modular design for scalability and maintainability.</li>
+<li>Grew the platform to 16,000+ organic users with zero paid marketing.</li>
+<li>Integrated AI-driven recommendations and user behaviour analytics, with Firebase for real-time data, authentication, and cloud functions.</li>
+</ul>
+</div>
+
+<div class="proj avoid">
+<div class="name">Barq — AI-Powered Advertising Platform (B2B SaaS) &nbsp;<span class="stack">barq-bot-jo.web.app</span></div>
+<div class="stack">AI / LLM APIs, Firebase, Web</div>
+<ul>
+<li>Founded and launched a platform that takes small businesses from idea to a finished ad campaign in three steps, with a client dashboard to manage and track results.</li>
+<li>Revenue-generating with month-over-month growth; Arabic/English landing page and dashboard.</li>
+</ul>
+</div>
+
+<div class="proj avoid">
+<div class="name">MenuJo — Menus and Price Lists for Businesses in Jordan &nbsp;<span class="stack">menujo.co</span></div>
+<div class="stack">Web, QR codes, PDF export, Arabic/English</div>
+<ul>
+<li>Built a web tool that lets restaurants, cafés, salons and shops create designed menus and price lists from a phone, with printable PDFs and QR-code pages that reflect price updates within seconds.</li>
+</ul>
+</div>
+
+<div class="proj avoid">
+<div class="name">Mashroo3i — Home Business Marketplace App (Android)</div>
+<div class="stack">Kotlin, Android SDK, Google Maps, SMS OTP — published on Google Play. Marketplace enabling Jordanian families to open a home store and sell home-made food, sweets and handicrafts.</div>
+<ul>
+<li>Built the seller side (store creation, map location, working hours, multi-image listings) and buyer discovery (featured stores, categories, nearest stores, search).</li>
+<li>Implemented cart and checkout with a map-based delivery picker, order history, and direct seller contact.</li>
+<li>Phone registration with SMS OTP verification; fully Arabic RTL interface with bottom navigation.</li>
+</ul>
+</div>
+
+<div class="proj avoid">
+<div class="name">Trip500 — Budget Trip Planner &nbsp;<span class="stack">trip-500.web.app</span></div>
+<div class="stack">Compose Multiplatform (CMP), REST APIs, Web</div>
+<ul>
+<li>Built a Compose Multiplatform app (shared UI for Android and iOS) with AI-powered itinerary generation and smart budget allocation from real-time travel pricing.</li>
+<li>Developed a companion web app for trip planning and booking redirects, synchronised with the mobile app.</li>
+</ul>
+</div>
+
+<h2>Education</h2>
+<div class="row"><span><span class="role">B.Sc. in Software Engineering</span> &nbsp;|&nbsp; <span class="org">The Hashemite University &nbsp;|&nbsp; Zarqa, Jordan</span></span><span class="date">2016 – 2020</span></div>
+
+</body>
+</html>
