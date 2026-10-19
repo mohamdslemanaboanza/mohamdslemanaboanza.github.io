@@ -214,8 +214,8 @@ window.PROJECTS = [
     tag: "Personal · Android · Google Play",
     period: "2021",
     role: "Designer and developer",
-    image: null,
-    links: [],
+    image: "images/mashroo3i.jpg",
+    links: [{ label: "Launch post on LinkedIn", href: "https://www.linkedin.com/feed/update/urn:li:activity:6839861931986210816/" }],
     stack: ["Kotlin", "Android SDK", "Google Maps", "SMS OTP", "Arabic RTL"],
     overview: [
       "Mashroo3i (مشروعي) lets families open a home store and sell home-made food, sweets and handicrafts as a source of household income. Buyers discover nearby stores, browse by category and order with delivery to a pinned location.",
