@@ -60,7 +60,7 @@ nav ul a:hover{color:var(--text);text-decoration:none}
 .chip{font-size:.78rem;background:var(--chip);color:var(--muted);padding:4px 10px;border-radius:6px}
 .card .links{display:flex;gap:16px;font-size:.92rem;font-weight:600}
 .product{border-top:4px solid var(--accent)}
-.product .shot{width:calc(100% + 48px);margin:-24px -24px 4px;aspect-ratio:16/10;object-fit:cover;object-position:top;border-bottom:1px solid var(--line);background:var(--chip)}
+.card .shot{width:calc(100% + 48px);margin:-24px -24px 4px;aspect-ratio:16/10;object-fit:cover;object-position:top;border-bottom:1px solid var(--line);background:var(--chip)}
 
 /* aurora background (GitHub-style glow) */
 .hero{position:relative;overflow:hidden;isolation:isolate}
@@ -93,7 +93,7 @@ nav ul a:hover{color:var(--text);text-decoration:none}
 .card::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .35s;background:radial-gradient(480px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--accent) 18%,transparent),transparent 45%)}
 .card:hover{transform:translateY(-6px);box-shadow:0 20px 50px -20px rgba(37,99,235,.45);border-color:color-mix(in srgb,var(--accent) 50%,var(--line))}
 .card:hover::before{opacity:1}
-.product .shot{transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.card .shot{transition:transform .6s cubic-bezier(.2,.8,.2,1)}
 .card:hover .shot{transform:scale(1.04)}
 
 /* nav underline */
@@ -162,3 +162,9 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 .pnav-wrap{padding:0 0 72px;border-top:0!important}
 .pnav{display:flex;justify-content:space-between;gap:12px}
 @media (max-width:860px){.pgrid{grid-template-columns:1fr}.pside{position:static}}
+
+/* detail gallery */
+.pgallery{display:flex;gap:16px;overflow-x:auto;padding:8px 4px 16px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.pgallery img{flex:0 0 auto;width:min(240px,70vw);height:auto;border-radius:22px;border:1px solid var(--line);box-shadow:0 20px 50px -25px rgba(0,0,0,.6);scroll-snap-align:start;transition:transform .4s}
+.pgallery img:hover{transform:translateY(-6px)}
+.pgallery::-webkit-scrollbar{height:6px}.pgallery::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}

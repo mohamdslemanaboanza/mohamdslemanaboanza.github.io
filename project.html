@@ -45,6 +45,14 @@
   </div>
 </section>
 
+<section class="pgallery-wrap" id="p-gallery-wrap" hidden>
+  <div class="wrap">
+    <span class="eyebrow">Screens</span>
+    <h2>In the app</h2>
+    <div class="pgallery" id="p-gallery"></div>
+  </div>
+</section>
+
 <section>
   <div class="wrap pgrid">
     <div>
@@ -96,6 +104,7 @@
   $('p-tag').textContent=p.tag; $('p-name').textContent=p.name; $('p-tagline').textContent=p.tagline;
   $('p-links').innerHTML=p.links.map((l,k)=>`<a class="btn ${k?'':'primary'}" href="${esc(l.href)}" target="_blank" rel="noopener">${esc(l.label)} →</a>`).join('');
   $('p-shot').innerHTML=p.image?`<img src="${esc(p.image)}" alt="${esc(p.name)} screenshot">`:`<div class="pph"><span>${esc(p.name)}</span><small>Screenshots coming soon</small></div>`;
+  if(p.gallery){$('p-gallery-wrap').hidden=false;$('p-gallery').innerHTML=p.gallery.map(g=>`<img src="${esc(g)}" alt="${esc(p.name)} screen" loading="lazy" class="reveal">`).join('')}
   $('p-overview').innerHTML=p.overview.map(t=>`<p>${esc(t)}</p>`).join('');
   $('p-features').innerHTML=p.features.map(t=>`<li>${esc(t)}</li>`).join('');
   $('p-highlights').innerHTML=p.highlights.map(t=>`<li>${esc(t)}</li>`).join('');

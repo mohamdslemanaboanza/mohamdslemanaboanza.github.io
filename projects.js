@@ -150,8 +150,9 @@ window.PROJECTS = [
     tag: "Technzone · Android",
     period: "2024 – 2026",
     role: "Android Software Engineer, feature owner for the motor insurance flow",
-    image: null,
-    links: [],
+    image: "images/ammni.jpg",
+    gallery: ["images/gallery/ammni-1.jpg", "images/gallery/ammni-2.jpg", "images/gallery/ammni-3.jpg", "images/gallery/ammni-4.jpg"],
+    links: [{ label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.technzone.ammni" }],
     stack: ["Kotlin", "Jetpack Compose", "Material 3", "MVI", "Dagger / Anvil", "Retrofit", "Moshi", "HyperPay"],
     overview: [
       "Ammni compares and sells motor, travel and medical malpractice insurance in Saudi Arabia. Users enter their details, receive live offers from multiple insurers, compare them side by side and pay in the app.",
@@ -180,12 +181,16 @@ window.PROJECTS = [
     tag: "Technzone · Android",
     period: "2022 – 2024",
     role: "Android Software Engineer, maintained and shipped the app across multiple releases",
-    image: null,
-    links: [],
+    image: "images/parkaway.jpg",
+    gallery: ["images/gallery/parkaway-1.jpg", "images/gallery/parkaway-2.jpg", "images/gallery/parkaway-3.jpg", "images/gallery/parkaway-4.jpg"],
+    links: [
+      { label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.technzone.parkaway" },
+      { label: "Employee app", href: "https://play.google.com/store/apps/details?id=com.technzone.parkaway_employess" }
+    ],
     stack: ["Kotlin", "MVVM", "Hilt", "Coroutines / Flow", "Retrofit", "Room", "Paging 3", "WorkManager", "Unity (IL2CPP)", "Firebase", "HyperPay"],
     overview: [
       "Parkaway lets drivers find a parking spot, book it, pay and get a QR pass, with an embedded Unity 3D engine that shows the lot and lets the user pick the exact spot. It also sells subscriptions, an in-app wallet and car-wash bookings.",
-      "I developed and maintained the app across multiple Play Store releases and built the system that updates the 3D content without shipping a new app version."
+      "I developed and maintained the customer app and the companion Parkaway Employee app across multiple Play Store releases, and built the system that updates the 3D content without shipping a new app version."
     ],
     features: [
       "Parking search on Google Maps and 3D lot visualisation in Unity",
