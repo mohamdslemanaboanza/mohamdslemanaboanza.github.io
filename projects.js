@@ -214,7 +214,7 @@ window.PROJECTS = [
     tag: "Personal · Android · Google Play",
     period: "2021",
     role: "Designer and developer",
-    image: "images/mashroo3i.jpg",
+    image: "images/mashroo3i2.jpg",
     links: [{ label: "Launch post on LinkedIn", href: "https://www.linkedin.com/feed/update/urn:li:activity:6839861931986210816/" }],
     stack: ["Kotlin", "Android SDK", "Google Maps", "SMS OTP", "Arabic RTL"],
     overview: [
