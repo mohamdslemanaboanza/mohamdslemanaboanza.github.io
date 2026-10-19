@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project — Mohammed Abu Anzeh</title>
+<meta name="description" content="Project details from Mohammed Abu Anzeh's portfolio.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2732%27 fill=%27%232563eb%27/%3E%3Ctext x=%2732%27 y=%2742%27 text-anchor=%27middle%27 font-family=%27Inter,Arial,sans-serif%27 font-weight=%27700%27 font-size=%2728%27 fill=%27%23fff%27%3EMA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">Mohammed Abu Anzeh</a>
+    <ul>
+      <li><a href="index.html#products">Products</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero phero">
+  <div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <a class="back" href="index.html#products">← All projects</a>
+      <span class="eyebrow" id="p-tag"></span>
+      <h1 id="p-name"></h1>
+      <p class="lead" id="p-tagline"></p>
+      <div class="btns" id="p-links"></div>
+    </div>
+  </div>
+</header>
+
+<section class="pshot-wrap">
+  <div class="wrap">
+    <figure class="pshot" id="p-shot"></figure>
+  </div>
+</section>
+
+<section>
+  <div class="wrap pgrid">
+    <div>
+      <span class="eyebrow">Overview</span>
+      <h2>About the project</h2>
+      <div id="p-overview" class="prose"></div>
+
+      <span class="eyebrow" style="margin-top:2rem">Features</span>
+      <h2>What it does</h2>
+      <ul class="plist" id="p-features"></ul>
+
+      <span class="eyebrow" style="margin-top:2rem">Engineering</span>
+      <h2>Technical highlights</h2>
+      <ul class="plist" id="p-highlights"></ul>
+    </div>
+    <aside class="pside">
+      <div class="card reveal">
+        <h3>My role</h3>
+        <p id="p-role"></p>
+        <h3 style="margin-top:1rem">Period</h3>
+        <p id="p-period"></p>
+        <h3 style="margin-top:1rem">Tech stack</h3>
+        <div class="chips" id="p-stack"></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="pnav-wrap">
+  <div class="wrap pnav">
+    <a id="p-prev" class="btn"></a>
+    <a id="p-next" class="btn"></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Mohammed Abu Anzeh · Amman, Jordan</div>
+</footer>
+
+<script src="projects.js"></script>
+<script>
+(function(){
+  const list=window.PROJECTS, slug=new URLSearchParams(location.search).get('p');
+  const i=Math.max(0,list.findIndex(p=>p.slug===slug)), p=list[i];
+  const $=id=>document.getElementById(id);
+  const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  document.title=p.name+' — Mohammed Abu Anzeh';
+  document.querySelector('meta[name=description]').content=p.tagline;
+  $('p-tag').textContent=p.tag; $('p-name').textContent=p.name; $('p-tagline').textContent=p.tagline;
+  $('p-links').innerHTML=p.links.map((l,k)=>`<a class="btn ${k?'':'primary'}" href="${esc(l.href)}" target="_blank" rel="noopener">${esc(l.label)} →</a>`).join('');
+  $('p-shot').innerHTML=p.image?`<img src="${esc(p.image)}" alt="${esc(p.name)} screenshot">`:`<div class="pph"><span>${esc(p.name)}</span><small>Screenshots coming soon</small></div>`;
+  $('p-overview').innerHTML=p.overview.map(t=>`<p>${esc(t)}</p>`).join('');
+  $('p-features').innerHTML=p.features.map(t=>`<li>${esc(t)}</li>`).join('');
+  $('p-highlights').innerHTML=p.highlights.map(t=>`<li>${esc(t)}</li>`).join('');
+  $('p-role').textContent=p.role; $('p-period').textContent=p.period;
+  $('p-stack').innerHTML=p.stack.map(t=>`<span class="chip">${esc(t)}</span>`).join('');
+  const prev=list[(i-1+list.length)%list.length], next=list[(i+1)%list.length];
+  $('p-prev').href='project.html?p='+prev.slug; $('p-prev').textContent='← '+prev.name;
+  $('p-next').href='project.html?p='+next.slug; $('p-next').textContent=next.name+' →';
+})();
+</script>
+<script src="site.js" defer></script>
+</body>
+</html>
