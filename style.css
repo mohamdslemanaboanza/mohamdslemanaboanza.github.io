@@ -173,3 +173,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 .card:has(.links a[href^="project.html"]){cursor:pointer}
 .card .links a[href^="project.html"]::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit}
 .card .links a:not([href^="project.html"]){position:relative;z-index:2}
+
+/* compact home cards: bullets live on the detail pages */
+.grid .card ul{display:none}
+.grid .card .chip:nth-child(n+6){display:none}
