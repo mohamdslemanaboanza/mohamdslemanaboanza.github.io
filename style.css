@@ -168,3 +168,8 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 .pgallery img{flex:0 0 auto;width:min(240px,70vw);height:auto;border-radius:22px;border:1px solid var(--line);box-shadow:0 20px 50px -25px rgba(0,0,0,.6);scroll-snap-align:start;transition:transform .4s}
 .pgallery img:hover{transform:translateY(-6px)}
 .pgallery::-webkit-scrollbar{height:6px}.pgallery::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+
+/* whole card clickable: stretch the Details link over the card */
+.card:has(.links a[href^="project.html"]){cursor:pointer}
+.card .links a[href^="project.html"]::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit}
+.card .links a:not([href^="project.html"]){position:relative;z-index:2}
