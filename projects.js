@@ -181,8 +181,8 @@ window.PROJECTS = [
     tag: "Technzone · Android",
     period: "2022 – 2024",
     role: "Android Software Engineer, maintained and shipped the app across multiple releases",
-    image: "images/parkaway.jpg",
-    gallery: ["images/gallery/parkaway-1.jpg", "images/gallery/parkaway-2.jpg", "images/gallery/parkaway-3.jpg", "images/gallery/parkaway-4.jpg", "images/gallery/parkaway-5.jpg"],
+    image: "images/parkaway2.jpg",
+    gallery: ["images/gallery/parkaway2-1.jpg", "images/gallery/parkaway2-2.jpg", "images/gallery/parkaway2-3.jpg", "images/gallery/parkaway2-4.jpg", "images/gallery/parkaway2-5.jpg"],
     links: [
       { label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.technzone.parkaway" },
       { label: "Employee app", href: "https://play.google.com/store/apps/details?id=com.technzone.parkaway_employess" }
