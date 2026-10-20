@@ -5,3 +5,5 @@ document.querySelectorAll('.card').forEach(c=>c.addEventListener('pointermove',e
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;cio.unobserve(e.target);const el=e.target,end=+el.dataset.count,suf=el.dataset.suffix||'';if(reduce)return;const t0=performance.now(),d=1400;(function step(t){const p=Math.min(1,(t-t0)/d),v=Math.round(end*(1-Math.pow(1-p,3)));el.textContent=v.toLocaleString('en-US')+suf;if(p<1)requestAnimationFrame(step)})(t0)}),{threshold:.5});
 document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+// Safety net: if the entry animations never advance (throttled tab, odd browsers), jump them to their end state.
+setTimeout(()=>document.querySelectorAll('.hero h1,.hero .lead,.hero .btns,.hero .photo,.hero .eyebrow,.hero .ring').forEach(el=>el.getAnimations().forEach(a=>{if(a.currentTime===0&&a.playState==='running'&&(a.effect.getTiming().iterations!==Infinity))a.finish()})),2500);
