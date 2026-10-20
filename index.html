@@ -9,22 +9,23 @@
 <meta property="og:description" content="5+ years shipping production Android apps in Kotlin and Compose. Builder of Wasta, Barq, MenuJo and Trip500.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2732%27 fill=%27%232563eb%27/%3E%3Ctext x=%2732%27 y=%2742%27 text-anchor=%27middle%27 font-family=%27Inter,Arial,sans-serif%27 font-weight=%27700%27 font-size=%2728%27 fill=%27%23fff%27%3EMA%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=202610191342">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=202610201632">
 </head>
 <body>
 
 <nav>
   <div class="wrap">
-    <a class="brand" href="#">Mohammed Abu Anzeh</a>
+    <a class="brand" href="#" data-i18n="brand">Mohammed Abu Anzeh</a>
     <ul>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a data-i18n="t1" href="#products">Products</a></li>
+      <li><a data-i18n="t2" href="#work">Work</a></li>
+      <li><a data-i18n="t3" href="#skills">Skills</a></li>
+      <li><a data-i18n="t4" href="#experience">Experience</a></li>
+      <li><a data-i18n="t5" href="#education">Education</a></li>
+      <li><a data-i18n="t6" href="#contact">Contact</a></li>
     </ul>
+    <button class="lang" id="langToggle" type="button" aria-label="Switch language">عربي</button>
   </div>
 </nav>
 
@@ -33,82 +34,82 @@
   <div class="grain" aria-hidden="true"></div>
   <div class="wrap">
     <div>
-    <span class="eyebrow">Android Software Engineer · Amman, Jordan</span>
-    <h1>I build production Android apps<br>and <span class="glow">ship my own products.</span></h1>
-    <p class="lead">5+ years in Kotlin and Jetpack Compose. Kotlin Multiplatform, Clean Architecture, and payment-critical flows (HyperPay, 3D Secure, OTP). Founder of Wasta, Barq, MenuJo and Trip500.</p>
-    <p class="lead" style="margin-top:-1rem;color:var(--text);font-weight:600">Ready to lead a full IT team from idea to production.</p>
+    <span data-i18n="t7" class="eyebrow">Android Software Engineer · Amman, Jordan</span>
+    <h1 data-i18n="t14">I build production Android apps<br>and <span class="glow">ship my own products.</span></h1>
+    <p data-i18n="t15" class="lead">5+ years in Kotlin and Jetpack Compose. Kotlin Multiplatform, Clean Architecture, and payment-critical flows (HyperPay, 3D Secure, OTP). Founder of Wasta, Barq, MenuJo and Trip500.</p>
+    <p data-i18n="t16" class="lead" style="margin-top:-1rem;color:var(--text);font-weight:600">Ready to lead a full IT team from idea to production.</p>
     <div class="btns">
-      <a class="btn primary" href="#products">See my products</a>
-      <a class="btn" href="cv.pdf" download="Mohammed_AbuAnzeh_CV.pdf">Download CV</a>
-      <a class="btn" href="mailto:mabnoaza@gmail.com">Email me</a>
-      <a class="btn" href="https://linkedin.com/in/mohammed-abuanzeh-920815148" target="_blank" rel="noopener">LinkedIn</a>
+      <a data-i18n="t18" class="btn primary" href="#products">See my products</a>
+      <a data-i18n="t19" class="btn" href="cv.pdf" download="Mohammed_AbuAnzeh_CV.pdf">Download CV</a>
+      <a data-i18n="t20" class="btn" href="mailto:mabnoaza@gmail.com">Email me</a>
+      <a data-i18n="t21" class="btn" href="https://linkedin.com/in/mohammed-abuanzeh-920815148" target="_blank" rel="noopener">LinkedIn</a>
     </div>
     </div>
     <div class="ring"><img class="photo" src="photo.webp" alt="Mohammed Abu Anzeh" width="300" height="300"></div>
     <div class="stats">
-      <div class="stat"><b data-count="5" data-suffix="+">5+</b><span>years Android</span></div>
-      <div class="stat"><b data-count="16000" data-suffix="+">16,000+</b><span>organic Wasta users</span></div>
-      <div class="stat"><b data-count="4">4</b><span>products founded</span></div>
-      <div class="stat"><b data-count="30" data-suffix="+">30+</b><span>Gradle modules architected</span></div>
+      <div class="stat"><b data-count="5" data-suffix="+">5+</b><span data-i18n="t27">years Android</span></div>
+      <div class="stat"><b data-count="16000" data-suffix="+">16,000+</b><span data-i18n="t28">organic Wasta users</span></div>
+      <div class="stat"><b data-count="4">4</b><span data-i18n="t29">products founded</span></div>
+      <div class="stat"><b data-count="30" data-suffix="+">30+</b><span data-i18n="t30">Gradle modules architected</span></div>
     </div>
   </div>
 </header>
 
 <section id="products">
   <div class="wrap">
-    <span class="eyebrow">Founder</span>
-    <h2>Products I built</h2>
+    <span data-i18n="t8" class="eyebrow">Founder</span>
+    <h2 data-i18n="t31">Products I built</h2>
     <div class="grid">
 
       <article class="card product">
         <img class="shot" src="images/wasta.jpg" alt="Wasta web app home screen" loading="lazy">
-        <div class="top"><h3>Wasta</h3><span class="tag">Android · iOS</span></div>
-        <p>Freelance and connection platform. One Kotlin codebase for Android and iOS, grown to 16,000+ organic users with zero paid marketing.</p>
+        <div class="top"><h3 data-i18n="t104">Wasta</h3><span data-i18n="t37" class="tag">Android · iOS</span></div>
+        <p data-i18n="d1">Freelance and connection platform. One Kotlin codebase for Android and iOS, grown to 16,000+ organic users with zero paid marketing.</p>
         <ul>
-          <li>AI-driven recommendations and user behaviour analytics</li>
-          <li>Firebase real-time data, auth and cloud functions</li>
-          <li>Companion web app (Angular) and backend</li>
+          <li data-i18n="t45">AI-driven recommendations and user behaviour analytics</li>
+          <li data-i18n="t46">Firebase real-time data, auth and cloud functions</li>
+          <li data-i18n="t47">Companion web app (Angular) and backend</li>
         </ul>
         <div class="chips"><span class="chip">Kotlin Multiplatform</span><span class="chip">Compose Multiplatform</span><span class="chip">MVI</span><span class="chip">Firebase</span></div>
-        <div class="links"><a href="project.html?p=wasta">Details →</a><a href="https://www.gowasta.com" target="_blank" rel="noopener">gowasta.com →</a><a href="https://play.google.com/store/apps/details?id=com.MohmadAboanza.jops" target="_blank" rel="noopener">Google Play →</a></div>
+        <div class="links"><a href="project.html?p=wasta" data-i18n="t121">Details →</a><a href="https://www.gowasta.com" target="_blank" rel="noopener" data-i18n="t122">gowasta.com →</a><a data-i18n="t84" href="https://play.google.com/store/apps/details?id=com.MohmadAboanza.jops" target="_blank" rel="noopener">Google Play →</a></div>
       </article>
 
       <article class="card product">
         <img class="shot" src="images/barq.jpg" alt="Barq client dashboard" loading="lazy">
-        <div class="top"><h3>Barq</h3><span class="tag">B2B SaaS</span></div>
-        <p>AI-powered advertising platform. Small businesses go from idea to a finished ad campaign in three steps, with a dashboard to manage and track results.</p>
+        <div class="top"><h3 data-i18n="t105">Barq</h3><span data-i18n="t38" class="tag">B2B SaaS</span></div>
+        <p data-i18n="d2">AI-powered advertising platform. Small businesses go from idea to a finished ad campaign in three steps, with a dashboard to manage and track results.</p>
         <ul>
-          <li>Launched, revenue-generating, growing month over month</li>
-          <li>Arabic/English landing and client dashboard</li>
-          <li>Built landing pages for real clients in retail and insurance</li>
+          <li data-i18n="t48">Launched, revenue-generating, growing month over month</li>
+          <li data-i18n="t49">Arabic/English landing and client dashboard</li>
+          <li data-i18n="t50">Built landing pages for real clients in retail and insurance</li>
         </ul>
         <div class="chips"><span class="chip">AI / LLM APIs</span><span class="chip">Firebase</span><span class="chip">Web</span></div>
-        <div class="links"><a href="project.html?p=barq">Details →</a><a href="https://barq-bot-jo.web.app" target="_blank" rel="noopener">Visit Barq →</a></div>
+        <div class="links"><a href="project.html?p=barq" data-i18n="t123">Details →</a><a data-i18n="t85" href="https://barq-bot-jo.web.app" target="_blank" rel="noopener">Visit Barq →</a></div>
       </article>
 
       <article class="card product">
         <img class="shot" src="images/menujo.jpg" alt="MenuJo landing page" loading="lazy">
-        <div class="top"><h3>MenuJo</h3><span class="tag">Web · Jordan</span></div>
-        <p>Menus and price lists for restaurants, cafés, salons and shops in Jordan, built from a phone with no designer needed.</p>
+        <div class="top"><h3 data-i18n="t106">MenuJo</h3><span data-i18n="t39" class="tag">Web · Jordan</span></div>
+        <p data-i18n="d3">Menus and price lists for restaurants, cafés, salons and shops in Jordan, built from a phone with no designer needed.</p>
         <ul>
-          <li>Custom-designed menus in Arabic and English</li>
-          <li>Printable PDFs and QR-code menu pages</li>
-          <li>Price updates reflected on the QR page within seconds</li>
+          <li data-i18n="t51">Custom-designed menus in Arabic and English</li>
+          <li data-i18n="t52">Printable PDFs and QR-code menu pages</li>
+          <li data-i18n="t53">Price updates reflected on the QR page within seconds</li>
         </ul>
         <div class="chips"><span class="chip">Web</span><span class="chip">QR codes</span><span class="chip">PDF export</span><span class="chip">Arabic RTL</span></div>
-        <div class="links"><a href="project.html?p=menujo">Details →</a><a href="https://menujo.co" target="_blank" rel="noopener">menujo.co →</a></div>
+        <div class="links"><a href="project.html?p=menujo" data-i18n="t124">Details →</a><a data-i18n="t86" href="https://menujo.co" target="_blank" rel="noopener">menujo.co →</a></div>
       </article>
 
       <article class="card product">
         <img class="shot" src="images/trip500.jpg" alt="Trip500 web app" loading="lazy">
-        <div class="top"><h3>Trip500</h3><span class="tag">Android · iOS · Web</span></div>
-        <p>Budget-based trip planner with shared Compose UI for Android and iOS, plus a companion web app.</p>
+        <div class="top"><h3 data-i18n="t107">Trip500</h3><span data-i18n="t40" class="tag">Android · iOS · Web</span></div>
+        <p data-i18n="d4">Budget-based trip planner with shared Compose UI for Android and iOS, plus a companion web app.</p>
         <ul>
-          <li>AI-generated itineraries and smart budget allocation</li>
-          <li>Real-time travel pricing via REST APIs</li>
+          <li data-i18n="t54">AI-generated itineraries and smart budget allocation</li>
+          <li data-i18n="t55">Real-time travel pricing via REST APIs</li>
         </ul>
         <div class="chips"><span class="chip">Compose Multiplatform</span><span class="chip">REST</span><span class="chip">AI</span></div>
-        <div class="links"><a href="project.html?p=trip500">Details →</a><a href="https://trip-500.web.app" target="_blank" rel="noopener">trip-500.web.app →</a></div>
+        <div class="links"><a href="project.html?p=trip500" data-i18n="t125">Details →</a><a data-i18n="t87" href="https://trip-500.web.app" target="_blank" rel="noopener">trip-500.web.app →</a></div>
       </article>
 
     </div>
@@ -117,64 +118,64 @@
 
 <section id="work">
   <div class="wrap">
-    <span class="eyebrow">Professional work</span>
-    <h2>Apps I shipped for clients</h2>
+    <span data-i18n="t9" class="eyebrow">Professional work</span>
+    <h2 data-i18n="t32">Apps I shipped for clients</h2>
     <div class="grid">
 
       <article class="card">
         <img class="shot" src="images/modon.jpg" alt="Modon SuperApp screens" loading="lazy">
-        <div class="top"><h3>Modon SuperApp</h3><span class="tag">Real estate · UAE</span></div>
-        <p>Built at SilverFern for Modon Holding: the residents' and owners' app for Modon communities in Abu Dhabi. Property portfolio, payments, handover and community services.</p>
+        <div class="top"><h3 data-i18n="t108">Modon SuperApp</h3><span data-i18n="t41" class="tag">Real estate · UAE</span></div>
+        <p data-i18n="d5">Built at SilverFern for Modon Holding: the residents' and owners' app for Modon communities in Abu Dhabi. Property portfolio, payments, handover and community services.</p>
         <ul>
-          <li>Community home, amenities booking, events, polls, notices, service requests, e-permits, NOCs, short stay, storage, access cards, violations</li>
-          <li>Guest registration: email verification, Auth0, multi-step document form, decision flow (new / pending / registered)</li>
-          <li>Handover and move-in/move-out flows</li>
-          <li>Figma parity across 20+ screens incl. RTL/Arabic; 1,400+ Paparazzi snapshot tests</li>
+          <li data-i18n="t56">Community home, amenities booking, events, polls, notices, service requests, e-permits, NOCs, short stay, storage, access cards, violations</li>
+          <li data-i18n="t57">Guest registration: email verification, Auth0, multi-step document form, decision flow (new / pending / registered)</li>
+          <li data-i18n="t58">Handover and move-in/move-out flows</li>
+          <li data-i18n="t59">Figma parity across 20+ screens incl. RTL/Arabic; 1,400+ Paparazzi snapshot tests</li>
         </ul>
         <div class="chips"><span class="chip">Kotlin</span><span class="chip">Jetpack Compose</span><span class="chip">MVVM</span><span class="chip">Hilt</span><span class="chip">Retrofit</span><span class="chip">kotlinx.serialization</span><span class="chip">Auth0</span><span class="chip">Paparazzi</span><span class="chip">mockk</span></div>
-        <div class="links"><a href="project.html?p=modon">Details →</a></div>
+        <div class="links"><a data-i18n="t88" href="project.html?p=modon">Details →</a></div>
       </article>
 
       <article class="card">
         <img class="shot" src="images/ammni.jpg" alt="Ammni app screens" loading="lazy">
-        <div class="top"><h3>Ammni</h3><span class="tag">Insurance · KSA</span></div>
-        <p>Insurance marketplace for the Saudi market: motor, travel and medical malpractice, from quote comparison to policy purchase.</p>
+        <div class="top"><h3 data-i18n="t109">Ammni</h3><span data-i18n="t42" class="tag">Insurance · KSA</span></div>
+        <p data-i18n="d6">Insurance marketplace for the Saudi market: motor, travel and medical malpractice, from quote comparison to policy purchase.</p>
         <ul>
-          <li>End-to-end motor insurance wizard: vehicle → live offers → compare → pay</li>
-          <li>30+ Gradle modules, api/impl separation, MVI with Dagger/Anvil</li>
-          <li>HyperPay (mada, Visa/Mastercard, MisPay), OTP checkout</li>
-          <li>AES-encrypted payloads, biometric login, IBAN verification</li>
-          <li>Reusable Compose component library, Arabic/English RTL</li>
+          <li data-i18n="t60">End-to-end motor insurance wizard: vehicle → live offers → compare → pay</li>
+          <li data-i18n="t61">30+ Gradle modules, api/impl separation, MVI with Dagger/Anvil</li>
+          <li data-i18n="t62">HyperPay (mada, Visa/Mastercard, MisPay), OTP checkout</li>
+          <li data-i18n="t63">AES-encrypted payloads, biometric login, IBAN verification</li>
+          <li data-i18n="t64">Reusable Compose component library, Arabic/English RTL</li>
         </ul>
         <div class="chips"><span class="chip">Kotlin</span><span class="chip">Jetpack Compose</span><span class="chip">Material 3</span><span class="chip">MVI</span><span class="chip">Dagger/Anvil</span><span class="chip">Retrofit</span><span class="chip">HyperPay</span></div>
-        <div class="links"><a href="project.html?p=ammni">Details →</a><a href="https://play.google.com/store/apps/details?id=com.technzone.ammni" target="_blank" rel="noopener">Google Play →</a></div>
+        <div class="links"><a href="project.html?p=ammni" data-i18n="t126">Details →</a><a data-i18n="t89" href="https://play.google.com/store/apps/details?id=com.technzone.ammni" target="_blank" rel="noopener">Google Play →</a></div>
       </article>
 
       <article class="card">
         <img class="shot" src="images/parkaway2.jpg" alt="Parkaway app screens" loading="lazy">
-        <div class="top"><h3>Parkaway</h3><span class="tag">Smart parking</span></div>
-        <p>Find, book and pay for parking, with an embedded Unity 3D engine to visualise the lot and pick a spot. Multiple Play Store releases.</p>
+        <div class="top"><h3 data-i18n="t110">Parkaway</h3><span data-i18n="t43" class="tag">Smart parking</span></div>
+        <p data-i18n="d7">Find, book and pay for parking, with an embedded Unity 3D engine to visualise the lot and pick a spot. Multiple Play Store releases.</p>
         <ul>
-          <li>Unity (IL2CPP) embedded in the native app for 3D lot visualisation</li>
-          <li>Over-the-air Unity asset updates via GitHub Releases with Flow progress and rollback</li>
-          <li>HyperPay SDK: 3D Secure, saved cards, in-app wallet, subscriptions</li>
-          <li>FCM push, Crashlytics, Google Maps, QR booking passes, dark mode</li>
+          <li data-i18n="t65">Unity (IL2CPP) embedded in the native app for 3D lot visualisation</li>
+          <li data-i18n="t66">Over-the-air Unity asset updates via GitHub Releases with Flow progress and rollback</li>
+          <li data-i18n="t67">HyperPay SDK: 3D Secure, saved cards, in-app wallet, subscriptions</li>
+          <li data-i18n="t68">FCM push, Crashlytics, Google Maps, QR booking passes, dark mode</li>
         </ul>
         <div class="chips"><span class="chip">Kotlin</span><span class="chip">MVVM</span><span class="chip">Hilt</span><span class="chip">Coroutines/Flow</span><span class="chip">Room</span><span class="chip">Paging 3</span><span class="chip">Unity</span><span class="chip">Firebase</span></div>
-        <div class="links"><a href="project.html?p=parkaway">Details →</a><a href="https://play.google.com/store/apps/details?id=com.technzone.parkaway" target="_blank" rel="noopener">Google Play →</a></div>
+        <div class="links"><a href="project.html?p=parkaway" data-i18n="t127">Details →</a><a data-i18n="t90" href="https://play.google.com/store/apps/details?id=com.technzone.parkaway" target="_blank" rel="noopener">Google Play →</a></div>
       </article>
 
       <article class="card">
         <img class="shot" src="images/mashroo3i2.jpg" alt="Mashroo3i app screens" loading="lazy">
-        <div class="top"><h3>Mashroo3i</h3><span class="tag">Google Play</span></div>
-        <p>Marketplace where Jordanian families open a home store and sell home-made food, sweets and handicrafts.</p>
+        <div class="top"><h3 data-i18n="t111">Mashroo3i</h3><span data-i18n="t44" class="tag">Google Play</span></div>
+        <p data-i18n="d8">Marketplace where Jordanian families open a home store and sell home-made food, sweets and handicrafts.</p>
         <ul>
-          <li>Seller store creation with map location, hours and multi-image listings</li>
-          <li>Buyer discovery: nearest stores, categories, search</li>
-          <li>Cart, map-based delivery picker, SMS OTP login</li>
+          <li data-i18n="t69">Seller store creation with map location, hours and multi-image listings</li>
+          <li data-i18n="t70">Buyer discovery: nearest stores, categories, search</li>
+          <li data-i18n="t71">Cart, map-based delivery picker, SMS OTP login</li>
         </ul>
         <div class="chips"><span class="chip">Kotlin</span><span class="chip">Google Maps</span><span class="chip">SMS OTP</span><span class="chip">Arabic RTL</span></div>
-        <div class="links"><a href="project.html?p=mashroo3i">Details →</a></div>
+        <div class="links"><a data-i18n="t91" href="project.html?p=mashroo3i">Details →</a></div>
       </article>
 
     </div>
@@ -183,60 +184,60 @@
 
 <section id="skills">
   <div class="wrap">
-    <span class="eyebrow">Toolbox</span>
-    <h2>Skills</h2>
+    <span data-i18n="t10" class="eyebrow">Toolbox</span>
+    <h2 data-i18n="t33">Skills</h2>
     <div class="skills">
-      <div><h3>Languages</h3><div class="chips"><span class="chip">Kotlin</span><span class="chip">Java</span></div></div>
-      <div><h3>Android</h3><div class="chips"><span class="chip">Jetpack Compose</span><span class="chip">Compose Multiplatform</span><span class="chip">Kotlin Multiplatform</span><span class="chip">Material 3</span><span class="chip">Coroutines</span><span class="chip">Flow</span><span class="chip">Room</span><span class="chip">SQLite</span><span class="chip">Navigation</span><span class="chip">Paging 3</span><span class="chip">WorkManager</span></div></div>
-      <div><h3>Architecture &amp; DI</h3><div class="chips"><span class="chip">Clean Architecture</span><span class="chip">MVI</span><span class="chip">MVVM</span><span class="chip">Multi-module</span><span class="chip">Dagger</span><span class="chip">Anvil</span><span class="chip">Hilt</span></div></div>
-      <div><h3>Backend &amp; APIs</h3><div class="chips"><span class="chip">REST</span><span class="chip">Retrofit</span><span class="chip">Moshi</span><span class="chip">OkHttp</span><span class="chip">kotlinx.serialization</span><span class="chip">Auth0</span><span class="chip">Firebase Auth</span><span class="chip">Realtime DB</span><span class="chip">Cloud Functions</span><span class="chip">FCM</span><span class="chip">Crashlytics</span></div></div>
-      <div><h3>Payments &amp; Security</h3><div class="chips"><span class="chip">HyperPay / OPPWA</span><span class="chip">3D Secure</span><span class="chip">mada</span><span class="chip">MisPay</span><span class="chip">In-app wallet</span><span class="chip">OTP</span><span class="chip">Biometrics</span><span class="chip">AES payloads</span></div></div>
-      <div><h3>Testing</h3><div class="chips"><span class="chip">Paparazzi snapshot tests</span><span class="chip">mockk</span><span class="chip">JUnit</span></div></div>
-      <div><h3>AI &amp; Other</h3><div class="chips"><span class="chip">Claude AI</span><span class="chip">LLM APIs</span><span class="chip">Recommendation engines</span><span class="chip">Unity (IL2CPP)</span><span class="chip">Google Maps</span><span class="chip">QR codes</span><span class="chip">Arabic/English RTL</span></div></div>
+      <div><h3 data-i18n="t92">Languages</h3><div class="chips"><span class="chip">Kotlin</span><span class="chip">Java</span></div></div>
+      <div><h3 data-i18n="t93">Android</h3><div class="chips"><span class="chip">Jetpack Compose</span><span class="chip">Compose Multiplatform</span><span class="chip">Kotlin Multiplatform</span><span class="chip">Material 3</span><span class="chip">Coroutines</span><span class="chip">Flow</span><span class="chip">Room</span><span class="chip">SQLite</span><span class="chip">Navigation</span><span class="chip">Paging 3</span><span class="chip">WorkManager</span></div></div>
+      <div><h3 data-i18n="t94">Architecture &amp; DI</h3><div class="chips"><span class="chip">Clean Architecture</span><span class="chip">MVI</span><span class="chip">MVVM</span><span class="chip">Multi-module</span><span class="chip">Dagger</span><span class="chip">Anvil</span><span class="chip">Hilt</span></div></div>
+      <div><h3 data-i18n="t95">Backend &amp; APIs</h3><div class="chips"><span class="chip">REST</span><span class="chip">Retrofit</span><span class="chip">Moshi</span><span class="chip">OkHttp</span><span class="chip">kotlinx.serialization</span><span class="chip">Auth0</span><span class="chip">Firebase Auth</span><span class="chip">Realtime DB</span><span class="chip">Cloud Functions</span><span class="chip">FCM</span><span class="chip">Crashlytics</span></div></div>
+      <div><h3 data-i18n="t96">Payments &amp; Security</h3><div class="chips"><span class="chip">HyperPay / OPPWA</span><span class="chip">3D Secure</span><span class="chip">mada</span><span class="chip">MisPay</span><span class="chip">In-app wallet</span><span class="chip">OTP</span><span class="chip">Biometrics</span><span class="chip">AES payloads</span></div></div>
+      <div><h3 data-i18n="t97">Testing</h3><div class="chips"><span class="chip">Paparazzi snapshot tests</span><span class="chip">mockk</span><span class="chip">JUnit</span></div></div>
+      <div><h3 data-i18n="t98">AI &amp; Other</h3><div class="chips"><span class="chip">Claude AI</span><span class="chip">LLM APIs</span><span class="chip">Recommendation engines</span><span class="chip">Unity (IL2CPP)</span><span class="chip">Google Maps</span><span class="chip">QR codes</span><span class="chip">Arabic/English RTL</span></div></div>
     </div>
   </div>
 </section>
 
 <section id="experience">
   <div class="wrap">
-    <span class="eyebrow">Career</span>
-    <h2>Experience</h2>
+    <span data-i18n="t11" class="eyebrow">Career</span>
+    <h2 data-i18n="t34">Experience</h2>
 
     <div class="job">
-      <time>Sep 2026 – Present</time>
+      <time data-i18n="t99">Sep 2026 – Present</time>
       <div>
-        <div class="jobhead"><img class="logo" src="images/logos/silverfern.png" alt="SilverFern"><img class="logo dark" src="images/logos/modon.png" alt="Modon Holding"><div><h3>Android Developer</h3><div class="where">SilverFern · Dubai, UAE · Client: Modon Holding, Abu Dhabi</div></div></div>
+        <div class="jobhead"><img class="logo" src="images/logos/silverfern.png" alt="SilverFern"><img class="logo dark" src="images/logos/modon.png" alt="Modon Holding"><div><h3 data-i18n="t112">Android Developer</h3><div data-i18n="t116" class="where">SilverFern · Dubai, UAE · Client: Modon Holding, Abu Dhabi</div></div></div>
         <ul>
-          <li>Build and ship community features for the Modon SuperApp in Kotlin and Jetpack Compose (MVVM, Hilt, Retrofit, kotlinx.serialization).</li>
-          <li>Delivered the guest registration flow end to end: email verification, Auth0 sign-in, multi-step document form, Farvision and OCI API Gateway integration.</li>
-          <li>Own the handover and move-in/move-out flows, including tracked back-end workarounds agreed with the backend team.</li>
-          <li>Drove pixel-level Figma parity across 20+ screens, raising measured design match from ~30% to ~70%.</li>
-          <li>Maintain a 1,400+ Paparazzi snapshot-test suite with mockk unit tests; review PRs and coordinate API contracts with backend and iOS.</li>
+          <li data-i18n="t72">Build and ship community features for the Modon SuperApp in Kotlin and Jetpack Compose (MVVM, Hilt, Retrofit, kotlinx.serialization).</li>
+          <li data-i18n="t73">Delivered the guest registration flow end to end: email verification, Auth0 sign-in, multi-step document form, Farvision and OCI API Gateway integration.</li>
+          <li data-i18n="t74">Own the handover and move-in/move-out flows, including tracked back-end workarounds agreed with the backend team.</li>
+          <li data-i18n="t75">Drove pixel-level Figma parity across 20+ screens, raising measured design match from ~30% to ~70%.</li>
+          <li data-i18n="t76">Maintain a 1,400+ Paparazzi snapshot-test suite with mockk unit tests; review PRs and coordinate API contracts with backend and iOS.</li>
         </ul>
       </div>
     </div>
 
     <div class="job">
-      <time>Jan 2022 – Present</time>
+      <time data-i18n="t100">Jan 2022 – Present</time>
       <div>
-        <div class="jobhead"><img class="logo" src="images/logos/technzone.png" alt="Technzone"><div><h3>Android Software Engineer</h3><div class="where">Technzone · Amman, Jordan</div></div></div>
+        <div class="jobhead"><img class="logo" src="images/logos/technzone.png" alt="Technzone"><div><h3 data-i18n="t113">Android Software Engineer</h3><div data-i18n="t117" class="where">Technzone · Amman, Jordan</div></div></div>
         <ul>
-          <li>Deliver B2B and B2C Android apps for the Jordanian and Saudi markets in Kotlin, Compose and Clean Architecture.</li>
-          <li>Code reviews, mentoring junior developers, and leading the team's Compose UI migration.</li>
-          <li>Integrate Claude AI and automation tools for intelligent workflows and smart filtering.</li>
-          <li>Improve performance and retention through caching, navigation and Room/SQLite persistence.</li>
+          <li data-i18n="t77">Deliver B2B and B2C Android apps for the Jordanian and Saudi markets in Kotlin, Compose and Clean Architecture.</li>
+          <li data-i18n="t78">Code reviews, mentoring junior developers, and leading the team's Compose UI migration.</li>
+          <li data-i18n="t79">Integrate Claude AI and automation tools for intelligent workflows and smart filtering.</li>
+          <li data-i18n="t80">Improve performance and retention through caching, navigation and Room/SQLite persistence.</li>
         </ul>
       </div>
     </div>
 
     <div class="job">
-      <time>May 2021 – Dec 2021</time>
+      <time data-i18n="t101">May 2021 – Dec 2021</time>
       <div>
-        <div class="jobhead"><img class="logo" src="images/logos/wajeez.png" alt="Wajeez"><div><h3>Android Software Engineer</h3><div class="where">Wajeez · Amman, Jordan</div></div></div>
+        <div class="jobhead"><img class="logo" src="images/logos/wajeez.png" alt="Wajeez"><div><h3 data-i18n="t114">Android Software Engineer</h3><div data-i18n="t118" class="where">Wajeez · Amman, Jordan</div></div></div>
         <ul>
-          <li>Revamped the company's main mobile app for UI consistency and performance.</li>
-          <li>Migrated a legacy Java codebase to Kotlin, cutting the crash rate by 20%.</li>
-          <li>Worked in cross-functional Agile/Scrum teams.</li>
+          <li data-i18n="t81">Revamped the company's main mobile app for UI consistency and performance.</li>
+          <li data-i18n="t82">Migrated a legacy Java codebase to Kotlin, cutting the crash rate by 20%.</li>
+          <li data-i18n="t83">Worked in cross-functional Agile/Scrum teams.</li>
         </ul>
       </div>
     </div>
@@ -246,19 +247,19 @@
 
 <section id="education">
   <div class="wrap">
-    <span class="eyebrow">Background</span>
-    <h2>Education &amp; Languages</h2>
+    <span data-i18n="t12" class="eyebrow">Background</span>
+    <h2 data-i18n="t35">Education &amp; Languages</h2>
     <div class="job">
-      <time>2016 – 2020</time>
+      <time data-i18n="t102">2016 – 2020</time>
       <div>
-        <div class="jobhead"><img class="logo" src="images/logos/hu.png" alt="The Hashemite University"><div><h3>B.Sc. in Software Engineering</h3><div class="where">The Hashemite University · Zarqa, Jordan</div></div></div>
+        <div class="jobhead"><img class="logo" src="images/logos/hu.png" alt="The Hashemite University"><div><h3 data-i18n="t115">B.Sc. in Software Engineering</h3><div data-i18n="t119" class="where">The Hashemite University · Zarqa, Jordan</div></div></div>
       </div>
     </div>
     <div class="job">
-      <time>Languages</time>
+      <time data-i18n="t103">Languages</time>
       <div>
-        <h3>Arabic <span class="where" style="display:inline;font-weight:400">· Native</span></h3>
-        <h3>English <span class="where" style="display:inline;font-weight:400">· Professional</span></h3>
+        <h3><span data-i18n="l1">Arabic</span> <span class="where" style="display:inline;font-weight:400" data-i18n="l3">· Native</span></h3>
+        <h3><span data-i18n="l2">English</span> <span class="where" style="display:inline;font-weight:400" data-i18n="l4">· Professional</span></h3>
       </div>
     </div>
   </div>
@@ -266,23 +267,24 @@
 
 <section id="contact" class="contact">
   <div class="wrap">
-    <span class="eyebrow">Contact</span>
-    <h2>Let's build something</h2>
-    <p class="lead">Open to Android and Kotlin Multiplatform roles, technical leadership, freelance work, and partnerships around Wasta, Barq, MenuJo and Trip500. I can own a full IT team from idea to production.</p>
+    <span data-i18n="t13" class="eyebrow">Contact</span>
+    <h2 data-i18n="t36">Let's build something</h2>
+    <p data-i18n="t17" class="lead">Open to Android and Kotlin Multiplatform roles, technical leadership, freelance work, and partnerships around Wasta, Barq, MenuJo and Trip500. I can own a full IT team from idea to production.</p>
     <div class="btns">
-      <a class="btn primary" href="mailto:mabnoaza@gmail.com">mabnoaza@gmail.com</a>
-      <a class="btn" href="https://linkedin.com/in/mohammed-abuanzeh-920815148" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href="https://behance.net/eng-mohaboanza" target="_blank" rel="noopener">Behance</a>
-      <a class="btn" href="https://github.com/mohamdslemanaboanza" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="cv.pdf" download="Mohammed_AbuAnzeh_CV.pdf">Download CV</a>
+      <a data-i18n="t22" class="btn primary" href="mailto:mabnoaza@gmail.com">mabnoaza@gmail.com</a>
+      <a data-i18n="t23" class="btn" href="https://linkedin.com/in/mohammed-abuanzeh-920815148" target="_blank" rel="noopener">LinkedIn</a>
+      <a data-i18n="t24" class="btn" href="https://behance.net/eng-mohaboanza" target="_blank" rel="noopener">Behance</a>
+      <a data-i18n="t25" class="btn" href="https://github.com/mohamdslemanaboanza" target="_blank" rel="noopener">GitHub</a>
+      <a data-i18n="t26" class="btn" href="cv.pdf" download="Mohammed_AbuAnzeh_CV.pdf">Download CV</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="wrap">© 2026 Mohammed Abu Anzeh · Amman, Jordan</div>
+  <div data-i18n="t120" class="wrap">© 2026 Mohammed Abu Anzeh · Amman, Jordan</div>
 </footer>
 
-<script src="site.js?v=202610191342" defer></script>
+<script src="i18n.js?v=202610201632"></script>
+<script src="site.js?v=202610201632" defer></script>
 </body>
 </html>

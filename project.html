@@ -7,21 +7,22 @@
 <meta name="description" content="Project details from Mohammed Abu Anzeh's portfolio.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2732%27 fill=%27%232563eb%27/%3E%3Ctext x=%2732%27 y=%2742%27 text-anchor=%27middle%27 font-family=%27Inter,Arial,sans-serif%27 font-weight=%27700%27 font-size=%2728%27 fill=%27%23fff%27%3EMA%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=202610191342">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=202610201632">
 </head>
 <body>
 
 <nav>
   <div class="wrap">
-    <a class="brand" href="index.html">Mohammed Abu Anzeh</a>
+    <a class="brand" href="index.html" data-i18n="brand">Mohammed Abu Anzeh</a>
     <ul>
-      <li><a href="index.html#products">Products</a></li>
-      <li><a href="index.html#work">Work</a></li>
-      <li><a href="index.html#skills">Skills</a></li>
-      <li><a href="index.html#experience">Experience</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="index.html#products" data-i18n="t1">Products</a></li>
+      <li><a href="index.html#work" data-i18n="t2">Work</a></li>
+      <li><a href="index.html#skills" data-i18n="t3">Skills</a></li>
+      <li><a href="index.html#experience" data-i18n="t4">Experience</a></li>
+      <li><a href="index.html#contact" data-i18n="t6">Contact</a></li>
     </ul>
+    <button class="lang" id="langToggle" type="button" aria-label="Switch language">عربي</button>
   </div>
 </nav>
 
@@ -30,7 +31,7 @@
   <div class="grain" aria-hidden="true"></div>
   <div class="wrap">
     <div>
-      <a class="back" href="index.html#products">← All projects</a>
+      <a class="back" href="index.html#products" data-i18n="p1">← All projects</a>
       <span class="eyebrow" id="p-tag"></span>
       <h1 id="p-name"></h1>
       <p class="lead" id="p-tagline"></p>
@@ -47,8 +48,8 @@
 
 <section class="pgallery-wrap" id="p-gallery-wrap" hidden>
   <div class="wrap">
-    <span class="eyebrow">Screens</span>
-    <h2>In the app</h2>
+    <span class="eyebrow" data-i18n="p11">Screens</span>
+    <h2 data-i18n="p12">In the app</h2>
     <div class="pgallery" id="p-gallery"></div>
   </div>
 </section>
@@ -56,25 +57,25 @@
 <section>
   <div class="wrap pgrid">
     <div>
-      <span class="eyebrow">Overview</span>
-      <h2>About the project</h2>
+      <span class="eyebrow" data-i18n="p2">Overview</span>
+      <h2 data-i18n="p3">About the project</h2>
       <div id="p-overview" class="prose"></div>
 
-      <span class="eyebrow" style="margin-top:2rem">Features</span>
-      <h2>What it does</h2>
+      <span class="eyebrow" style="margin-top:2rem" data-i18n="p4">Features</span>
+      <h2 data-i18n="p5">What it does</h2>
       <ul class="plist" id="p-features"></ul>
 
-      <span class="eyebrow" style="margin-top:2rem">Engineering</span>
-      <h2>Technical highlights</h2>
+      <span class="eyebrow" style="margin-top:2rem" data-i18n="p6">Engineering</span>
+      <h2 data-i18n="p7">Technical highlights</h2>
       <ul class="plist" id="p-highlights"></ul>
     </div>
     <aside class="pside">
       <div class="card reveal">
-        <h3>My role</h3>
+        <h3 data-i18n="p8">My role</h3>
         <p id="p-role"></p>
-        <h3 style="margin-top:1rem">Period</h3>
+        <h3 style="margin-top:1rem" data-i18n="p9">Period</h3>
         <p id="p-period"></p>
-        <h3 style="margin-top:1rem">Tech stack</h3>
+        <h3 style="margin-top:1rem" data-i18n="p10">Tech stack</h3>
         <div class="chips" id="p-stack"></div>
       </div>
     </aside>
@@ -89,33 +90,43 @@
 </section>
 
 <footer>
-  <div class="wrap">© 2026 Mohammed Abu Anzeh · Amman, Jordan</div>
+  <div class="wrap" data-i18n="t120">© 2026 Mohammed Abu Anzeh · Amman, Jordan</div>
 </footer>
 
-<script src="projects.js?v=202610191342"></script>
+<script src="i18n.js?v=202610201632"></script>
+<script src="projects.js?v=202610201632"></script>
+<script src="projects.ar.js?v=202610201632"></script>
 <script>
 (function(){
   const list=window.PROJECTS, slug=new URLSearchParams(location.search).get('p');
-  const i=Math.max(0,list.findIndex(p=>p.slug===slug)), p=list[i];
+  const i=Math.max(0,list.findIndex(p=>p.slug===slug)), base=list[i];
   const $=id=>document.getElementById(id);
-  const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-  document.title=p.name+' — Mohammed Abu Anzeh';
-  document.querySelector('meta[name=description]').content=p.tagline;
-  $('p-tag').textContent=p.tag; $('p-name').textContent=p.name; $('p-tagline').textContent=p.tagline;
-  $('p-links').innerHTML=p.links.map((l,k)=>`<a class="btn ${k?'':'primary'}" href="${esc(l.href)}" target="_blank" rel="noopener">${esc(l.label)} →</a>`).join('');
-  if(p.gallery){document.querySelector('.pshot-wrap').hidden=true}
-  $('p-shot').innerHTML=p.image?`<img src="${esc(p.image)}" alt="${esc(p.name)} screenshot">`:`<div class="pph"><span>${esc(p.name)}</span><small>Screenshots coming soon</small></div>`;
-  if(p.gallery){$('p-gallery-wrap').hidden=false;$('p-gallery').innerHTML=p.gallery.map(g=>`<img src="${esc(g)}" alt="${esc(p.name)} screen" loading="lazy" class="reveal">`).join('')}
-  $('p-overview').innerHTML=p.overview.map(t=>`<p>${esc(t)}</p>`).join('');
-  $('p-features').innerHTML=p.features.map(t=>`<li>${esc(t)}</li>`).join('');
-  $('p-highlights').innerHTML=p.highlights.map(t=>`<li>${esc(t)}</li>`).join('');
-  $('p-role').textContent=p.role; $('p-period').textContent=p.period;
-  $('p-stack').innerHTML=p.stack.map(t=>`<span class="chip">${esc(t)}</span>`).join('');
-  const prev=list[(i-1+list.length)%list.length], next=list[(i+1)%list.length];
-  $('p-prev').href='project.html?p='+prev.slug; $('p-prev').textContent='← '+prev.name;
-  $('p-next').href='project.html?p='+next.slug; $('p-next').textContent=next.name+' →';
+  const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function render(lang){
+    const AR=window.PROJECTS_AR||{}, ar=lang==='ar'&&AR[base.slug];
+    const p=ar?Object.assign({},base,ar,{links:base.links.map((l,k)=>Object.assign({},l,(ar.links&&ar.links[k])||{}))}):base;
+    const arrow=lang==='ar'?'←':'→', prevA=lang==='ar'?'→':'←';
+    document.title=p.name+' — '+(lang==='ar'?'محمد أبو عنزة':'Mohammed Abu Anzeh');
+    document.querySelector('meta[name=description]').content=p.tagline;
+    $('p-tag').textContent=p.tag; $('p-name').textContent=p.name; $('p-tagline').textContent=p.tagline;
+    $('p-links').innerHTML=p.links.map((l,k)=>`<a class="btn ${k?'':'primary'}" href="${esc(l.href)}" target="_blank" rel="noopener">${esc(l.label)} ${arrow}</a>`).join('');
+    document.querySelector('.pshot-wrap').hidden=!!p.gallery;
+    $('p-shot').innerHTML=p.image?`<img src="${esc(p.image)}" alt="${esc(p.name)}">`:`<div class="pph"><span>${esc(p.name)}</span><small>${lang==='ar'?'الصور قريباً':'Screenshots coming soon'}</small></div>`;
+    if(p.gallery){$('p-gallery-wrap').hidden=false;$('p-gallery').innerHTML=p.gallery.map(g=>`<img src="${esc(g)}" alt="${esc(p.name)}" loading="lazy" class="reveal in">`).join('')}
+    $('p-overview').innerHTML=p.overview.map(t=>`<p>${esc(t)}</p>`).join('');
+    $('p-features').innerHTML=p.features.map(t=>`<li>${esc(t)}</li>`).join('');
+    $('p-highlights').innerHTML=p.highlights.map(t=>`<li>${esc(t)}</li>`).join('');
+    $('p-role').textContent=p.role; $('p-period').textContent=p.period;
+    $('p-stack').innerHTML=p.stack.map(t=>`<span class="chip">${esc(t)}</span>`).join('');
+    const prev=list[(i-1+list.length)%list.length], next=list[(i+1)%list.length];
+    const nm=x=>(lang==='ar'&&AR[x.slug]&&AR[x.slug].name)||x.name;
+    $('p-prev').href='project.html?p='+prev.slug; $('p-prev').textContent=prevA+' '+nm(prev);
+    $('p-next').href='project.html?p='+next.slug; $('p-next').textContent=nm(next)+' '+arrow;
+  }
+  render(document.documentElement.lang==='ar'?'ar':'en');
+  document.addEventListener('langchange',e=>render(e.detail));
 })();
 </script>
-<script src="site.js?v=202610191342" defer></script>
+<script src="site.js?v=202610201632" defer></script>
 </body>
 </html>
