@@ -5,7 +5,7 @@ window.AR = {
   t7: "مهندس برمجيات أندرويد · عمّان، الأردن",
   t8: "مؤسس", t9: "أعمال مهنية", t10: "الأدوات", t11: "المسيرة المهنية", t12: "الخلفية", t13: "تواصل",
   t14: "أبني تطبيقات أندرويد إنتاجية<br>و<span class=\"glow\">أطلق منتجاتي الخاصة.</span>",
-  t15: "أكثر من 5 سنوات في Kotlin وJetpack Compose. Kotlin Multiplatform وClean Architecture وتدفقات الدفع الحساسة (HyperPay، 3D Secure، OTP). مؤسس واسطة وبرق وMenuJo وTrip500.",
+  t15: "أكثر من 6 سنوات في Kotlin وJetpack Compose. Kotlin Multiplatform وClean Architecture وتدفقات الدفع الحساسة (HyperPay، 3D Secure، OTP). مؤسس واسطة وبرق وMenuJo وTrip500.",
   t16: "جاهز لقيادة فريق تقني كامل من الفكرة حتى الإنتاج.",
   t17: "منفتح على وظائف Android وKotlin Multiplatform، والقيادة التقنية، والعمل الحر، والشراكات حول واسطة وبرق وMenuJo وTrip500. أستطيع إدارة فريق تقني كامل من الفكرة حتى الإنتاج.",
   t18: "شاهد منتجاتي", t19: "تحميل السيرة الذاتية", t20: "راسلني", t26: "تحميل السيرة الذاتية",
