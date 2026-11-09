@@ -119,7 +119,7 @@ window.PROJECTS = [
     name: "Modon SuperApp",
     tagline: "The residents' and owners' app for Modon communities in Abu Dhabi.",
     tag: "SilverFern · Client: Modon Holding",
-    period: "Sep 2026 – Present",
+    period: "Sep 2026 – Oct 2026",
     role: "Android Developer at SilverFern (Dubai), working on the Modon Holding account",
     image: "images/modon.jpg",
     gallery: ["images/gallery/modon-home.jpg", "images/gallery/modon-amenities.jpg", "images/gallery/modon-bbq.jpg", "images/gallery/modon-poll.jpg", "images/gallery/modon-help.jpg"],

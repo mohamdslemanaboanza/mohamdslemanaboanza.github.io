@@ -103,7 +103,7 @@ window.PROJECTS_AR = {
     name: "Modon SuperApp",
     tagline: "تطبيق السكان والملّاك لمجتمعات مدن في أبوظبي.",
     tag: "SilverFern · العميل: Modon Holding",
-    period: "سبتمبر 2026 – الآن",
+    period: "سبتمبر 2026 – أكتوبر 2026",
     role: "مطوّر أندرويد في SilverFern (دبي)، ضمن فريق حساب Modon Holding",
     links: [],
     overview: [
