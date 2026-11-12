@@ -33,6 +33,39 @@ window.PROJECTS = [
     ]
   },
   {
+    slug: "qitaa",
+    name: "Qitaa",
+    tagline: "Second-hand clothes marketplace for Jordan, live on the App Store and Google Play.",
+    tag: "Founder · Android · iOS · Web",
+    period: "Oct 2026 – Present",
+    role: "Founder: design, mobile apps, backend and web",
+    image: "images/qitaa.jpg",
+    gallery: ["images/gallery/qitaa-1.jpg", "images/gallery/qitaa-2.jpg", "images/gallery/qitaa-3.jpg", "images/gallery/qitaa-4.jpg", "images/gallery/qitaa-5.jpg"],
+    links: [{ label: "App Store", href: "https://apps.apple.com/app/id6830232281" }, { label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.qitaajo.app" }, { label: "qitaajo.com", href: "https://qitaajo.com" }],
+    stack: ["Kotlin Multiplatform", "Compose Multiplatform", "MVI", "Koin", "Firebase Auth", "Firestore", "Realtime Database", "Cloud Functions", "FCM"],
+    overview: [
+      "Qitaa (قطعة) lets people across Jordan sell clothes they no longer wear and buy good second-hand pieces from people nearby. It is free with no commission: buyers and sellers chat in the app and pay in cash on pickup or delivery.",
+      "I designed and built it end to end: the brand and design system, one Kotlin Multiplatform codebase with shared Compose UI for Android and iOS, the Firebase backend, and a server-rendered website at qitaajo.com for shared links. It went from first commit to live on the App Store and Google Play in about two weeks."
+    ],
+    features: [
+      "Phone sign-in with OTP",
+      "Five-step sell flow: up to 5 photos, details, condition, price and delivery",
+      "Browse, search and filter by category, size, condition, price and area across all 12 governorates",
+      "Per-item chat with quick replies and photos; the phone number stays hidden",
+      "Push notifications for new messages",
+      "Closet: edit, delete, mark as sold, and see views and favorites",
+      "Favorites, block and report",
+      "Arabic and English, light and dark themes"
+    ],
+    highlights: [
+      "One Kotlin Multiplatform codebase with Compose Multiplatform UI, MVI view models and Koin; repositories sit behind interfaces, so demo data and Firebase swap with one binding",
+      "Firebase Phone Auth, Firestore with security rules, Realtime Database chat, Storage, FCM, and Cloud Functions for push",
+      "Server-rendered website on a Cloud Function with Open Graph tags; Android App Links and iOS Universal Links open shared items in the app",
+      "Shipped to both stores, including release signing, App Store review and a fast fix release for a real-device phone sign-in crash",
+      "Custom design system: Almarai type, one brown accent, hairlines instead of shadows, and motion under 350 ms"
+    ]
+  },
+  {
     slug: "barq",
     name: "Barq",
     tagline: "AI-powered advertising platform for small businesses.",
