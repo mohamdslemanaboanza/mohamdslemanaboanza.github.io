@@ -40,7 +40,7 @@ window.PROJECTS = [
     period: "Oct 2026 – Present",
     role: "Founder: design, mobile apps, backend and web",
     image: "images/qitaa2.jpg",
-    gallery: ["images/gallery/qitaa-1.jpg", "images/gallery/qitaa-2.jpg", "images/gallery/qitaa-3.jpg", "images/gallery/qitaa-4.jpg", "images/gallery/qitaa-5.jpg"],
+    gallery: ["images/gallery/qitaa-hd-1.jpg", "images/gallery/qitaa-hd-2.jpg", "images/gallery/qitaa-hd-3.jpg", "images/gallery/qitaa-hd-4.jpg", "images/gallery/qitaa-hd-5.jpg"],
     links: [{ label: "App Store", href: "https://apps.apple.com/app/id6830232281" }, { label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.qitaajo.app" }, { label: "qitaajo.com", href: "https://qitaajo.com" }],
     stack: ["Kotlin Multiplatform", "Compose Multiplatform", "MVI", "Koin", "Firebase Auth", "Firestore", "Realtime Database", "Cloud Functions", "FCM"],
     overview: [
