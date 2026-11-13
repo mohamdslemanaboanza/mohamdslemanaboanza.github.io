@@ -195,3 +195,46 @@ html[dir=rtl] .hero h1{line-height:1.3}
 html[dir=rtl] .chip,html[dir=rtl] .pside .chip{direction:ltr}
 html[dir=rtl] .btn::after{transform:skewX(20deg)}
 html[dir=rtl] .pgallery{direction:rtl}
+
+/* ---- UI/UX pass ---- */
+section{scroll-margin-top:72px}
+/* product grid: two featured products on top, three below; client work as 2x2 */
+@media (min-width:900px){
+  .grid.feat{grid-template-columns:repeat(6,1fr)}
+  .grid.feat>.card{grid-column:span 2}
+  .grid.feat>.card.featured{grid-column:span 3}
+  .grid.two{grid-template-columns:repeat(2,1fr)}
+}
+.card.featured h3{font-size:1.3rem}
+/* card links as pills that never break mid-label */
+.card .links{flex-wrap:wrap;gap:8px;font-size:.85rem;padding-top:4px}
+.card .links a{white-space:nowrap;padding:7px 14px;border-radius:999px;border:1px solid var(--line);color:var(--text);transition:border-color .25s,background .25s}
+.card .links a:first-child{background:var(--accent);border-color:var(--accent);color:#fff}
+.card .links a:hover{text-decoration:none;border-color:var(--accent)}
+.card .links a:not(:first-child):hover{background:var(--accent-soft)}
+/* active section in the nav */
+nav ul a.active{color:var(--text)}
+nav ul a.active::after{transform:scaleX(1)}
+/* mobile: keep the menu as a swipeable row instead of hiding it */
+@media (max-width:640px){
+  nav .wrap{flex-wrap:wrap;height:auto;padding-top:12px}
+  nav ul{display:flex;order:3;width:100%;overflow-x:auto;gap:20px;padding:10px 0 12px;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
+  html[dir=rtl] nav ul{-webkit-mask-image:linear-gradient(270deg,#000 85%,transparent);mask-image:linear-gradient(270deg,#000 85%,transparent)}
+  nav ul::-webkit-scrollbar{display:none}
+  nav ul a{white-space:nowrap;font-size:.9rem}
+  section{scroll-margin-top:110px}
+  .hero .lead{font-size:1.02rem}
+  section{padding:56px 0}
+}
+/* back to top */
+.totop{position:fixed;bottom:22px;inset-inline-end:22px;z-index:20;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);color:var(--text);font-size:1.2rem;box-shadow:0 10px 30px -12px rgba(0,0,0,.5);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s,transform .3s,border-color .25s}
+.totop.show{opacity:1;transform:none;pointer-events:auto}
+.totop:hover{text-decoration:none;border-color:var(--accent)}
+/* gallery: tap a screen to see it large */
+.pgallery img{cursor:zoom-in}
+dialog.lb{border:0;padding:0;background:transparent;max-width:94vw;max-height:94vh;overflow:visible}
+dialog.lb::backdrop{background:rgba(5,7,12,.86);backdrop-filter:blur(4px)}
+dialog.lb img{display:block;max-width:94vw;max-height:88vh;width:auto;height:auto;border-radius:20px;cursor:zoom-out}
+dialog.lb .nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);color:#fff;font-size:1.3rem;cursor:pointer}
+dialog.lb .prev{inset-inline-start:-58px}dialog.lb .next{inset-inline-end:-58px}
+@media (max-width:640px){dialog.lb .prev{inset-inline-start:8px}dialog.lb .next{inset-inline-end:8px}}
